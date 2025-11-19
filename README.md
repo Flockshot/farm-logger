@@ -13,9 +13,7 @@ Designed and implemented a 3-MCU embedded system simulating a smart farming IoT 
 
 The architecture consists of three distinct ATmega128 microcontroller nodes, each with a dedicated role, communicating wirelessly to form a complete data logging and control network.
 
-> **[Image: Proteus schematic of the 3-MCU system]**
->
-> *(**Developer Note:** Place a wide screenshot of your complete Proteus simulation schematic here. This is your most important visual. Also maybe add a video or some extra images)*
+![Image: Proteus schematic of the 3-MCU system](.media/project.svg)
 
 ### 1. Remote Sensor Node (`sensor_mcu.c`)
 * **Purpose:** Gathers live environmental data from the "field."
