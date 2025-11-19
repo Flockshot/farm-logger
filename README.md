@@ -24,6 +24,8 @@ The architecture consists of three distinct ATmega128 microcontroller nodes, eac
     * DC Water Pump (controlled via **PWM** for variable speed) 
 * **Logic:** Continuously reads sensors. If moisture drops below a threshold, it automatically activates the water pump. It transmits all sensor data to the Logger Node via an **XBee S1 RF module**.
 
+![Image: Flowchart of Remote Sensor Node](.media/remote_node_flowchart.png)
+
 ### 2. Central Logger Node (`main_mcu.c`)
 * **Purpose:** The central "brain" of the system. It logs all data, manages data integrity, and handles commands.
 * **Hardware:**
@@ -44,6 +46,8 @@ The architecture consists of three distinct ATmega128 microcontroller nodes, eac
     * 4x3 Matrix Keypad for user input.
     * HC-05 Bluetooth module (communicates with Logger Node).
 * **Logic:** Allows the user to check sensor statuses, view logged data, set new sensor thresholds, and manually override the system (e.g., turn the pump on/off).
+
+![Image: Flowchart of User Interface Node](.media/user_node_flowchart.png)
 
 ---
 
